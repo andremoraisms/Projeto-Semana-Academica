@@ -42,12 +42,14 @@ nav{
   }
   
 /* Faz o botão ter a mesma borda e cor do input */
+
 .btn-outline-success {
     border-color: #ced4da;   
     color: #495057;
   }
   
   /* Estilo ao passar o mouse */
+
 .btn-outline-success:hover {
     background-color: #ced4da;
     color: white;
@@ -55,6 +57,7 @@ nav{
   }
 
   /* Ajusta o espaço entre input e botão */
+
 form.d-flex .form-control {
     margin-right: 0.3rem;
   }
@@ -72,7 +75,7 @@ form.d-flex .form-control {
 
 .container {
     width: 100%;
-    max-width: 600px; /* Limita a largura máxima do formulário */
+    max-width: 700px;
 }
 
 .bordaLogin{
@@ -88,4 +91,10 @@ form.d-flex .form-control {
 
 .tam{
     width: 170px;
+}
+
+@media (min-width: 768px) {
+  .w-md-400 {
+    width: 400px !important;
+  }
 }
