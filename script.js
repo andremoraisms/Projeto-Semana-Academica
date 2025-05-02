@@ -16,12 +16,3 @@ links.forEach(link => {
   }
 });
 
-document.getElementById("uploadLogo").addEventListener("change", function(event) {
-  const reader = new FileReader();
-  reader.onload = function () {
-      const preview = document.getElementById("previewLogo");
-      preview.src = reader.result;
-      preview.style.display = "block";
-  };
-  reader.readAsDataURL(event.target.files[0]);
-});

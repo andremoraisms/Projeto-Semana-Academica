@@ -14,28 +14,44 @@
 <body class="fundo">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <a class="navbar-brand" href="index.html">
-                <img src="imagens/logo-semfundo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top" style="margin-left: 40px;"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+            <div class="container-fluid">
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 950px">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="artistas.html">Artistas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="obras.html">Obras</a></li>
-                    <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
-                  </ul>
-                <form class="d-flex" role="search" style="margin-right: 100px">
-                  <input class="form-control me-2" type="search" placeholder="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
+                <a class="navbar-brand mx-auto" href="index.html">
+                    <img src="imagens/logo-semfundo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 950px">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artistas.html">Artistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="obras.html">Obras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="perfil.html">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Login</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
     <div class="container mt-5">
@@ -43,17 +59,17 @@
         <form style="align-items: center;">
             <div class="mb-3">
                 <label for="nome" class="form-label">Seu nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Seu nome" style="width: 600px;">
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
             </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" style="width: 600px;">
+                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
             </div>
 
             <div class="mb-3">
                 <label for="mensagem" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="mensagem" rows="3" placeholder="Escreva sua mensagem" style="width: 600px;"></textarea>
+                <textarea class="form-control" id="mensagem" rows="3" placeholder="Escreva sua mensagem"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Enviar</button>
@@ -61,4 +77,5 @@
     </div>
 
 </body>
+
 </html>
