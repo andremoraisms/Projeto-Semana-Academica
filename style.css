@@ -1,0 +1,91 @@
+.fundo{
+background-color: white;
+background-image: url(imagens/fundo-logo.jpg);
+background-size: auto;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+width: 100vw;
+
+}
+
+.fundo2{
+    background-color: #fdf9f7;
+    background-image: url(imagens/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+nav{
+    height: 8vh;
+    background-color: white;
+}
+ 
+.navbar-nav .nav-link {
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: black;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    color: #a0a0a0;         
+  }
+  
+/* Faz o botão ter a mesma borda e cor do input */
+.btn-outline-success {
+    border-color: #ced4da;   
+    color: #495057;
+  }
+  
+  /* Estilo ao passar o mouse */
+.btn-outline-success:hover {
+    background-color: #ced4da;
+    color: white;
+    border: #495057;
+  }
+
+  /* Ajusta o espaço entre input e botão */
+form.d-flex .form-control {
+    margin-right: 0.3rem;
+  }
+
+.nav-link.barra-ativa::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    margin-top: 4px;
+    width: 100%;
+    height: 2px;
+    background-color: #a0a0a0;
+    transition: width 0.3s ease;
+  }
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima do formulário */
+}
+
+.bordaLogin{
+
+    width: 650px;
+    height: 350px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 0px 6.4px 0.5px #A9A9A9;
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+
+.tam{
+    width: 170px;
+}
