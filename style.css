@@ -77,9 +77,10 @@ form.d-flex .form-control {
     max-width: 700px;
 }
 
+
 .bordaLogin {
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   max-width: 650px;
   margin: auto;
   padding: 20px;
@@ -92,8 +93,8 @@ form.d-flex .form-control {
 
 .bordaLogin2{
 
-  width: 750px;
-  height: 450px;
+  width: 650px;
+  height: 350px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   box-shadow: 0px 0px 6.4px 0.5px #A9A9A9;
@@ -107,8 +108,36 @@ form.d-flex .form-control {
 
 @media (max-width: 767px) {
   .bordaLogin {
-    min-height: 450px; 
-    width: 90%;
+    min-height: 550px; 
+    width: 90%; 
+    padding: 10px; 
+  }
+
+  .form-control {
+    font-size: 14px; 
+  }
+
+  .mb-3 {
+    margin-bottom: 15px; 
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .d-flex .btn {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
