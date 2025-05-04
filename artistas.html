@@ -11,30 +11,32 @@
     <link rel="icon" href="imagens/logo-redondo.png">
 </head>
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-            <img src="imagens/logo-semfundo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top" style="margin-left: 40px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <img src="imagens/logo-semfundo.png" alt="Logo ArtePlural" width="60" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 950px">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="home.html" >Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="artistas.html" >Artistas</a></li>
-              <li class="nav-item"><a class="nav-link" href="obras.html" >Obras</a></li>
-              <li class="nav-item"><a class="nav-link" href="perfil.html" >Perfil</a></li>
-              <li class="nav-item"><a class="nav-link" href="contato.html" >Contato</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html" >Login</a></li>
-            </ul>
-            <form class="d-flex" role="search" style="margin-right: 100px">
-              <input class="form-control me-2" type="search" placeholder="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="artistas.html">Artistas</a></li>
+            <li class="nav-item"><a class="nav-link" href="obras.html">Obras</a></li>
+            <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+            <li class="nav-item"><a class="nav-link active barra-ativa" href="contato.html">Contato</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
+          </ul>
+          <form class="d-flex ms-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 </body>
 </html>
