@@ -29,9 +29,9 @@ function enviarCadastro() {
 
   setTimeout(() => {
     window.location.assign("home.html");
-  }, 100);
+  }, 100); 
 
-  return false;
+  return false; 
 }
 
 function toggleSenha(idCampo) {

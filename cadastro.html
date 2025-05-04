@@ -10,31 +10,30 @@
 </head>
 
 <body class="fundo2 centro">
-  <div class="container d-flex flex-column align-items-center">
-
+  <div class="container d-flex flex-column align-items-center px-3">
     <div class="mb-4">
       <img src="imagens/logo-redondo.png" alt="Logo" width="150" height="150" style="margin-top: -150px;">
     </div>
 
-    <div class="border border-secondary-subtle bordaLogin2 row w-100">
-        <form class="w-auto mx-auto mt-4 col-12 col-md-10" onsubmit="return enviarCadastro();">
+    <div class="border border-secondary-subtle bordaLogin row w-100">
+      <form class="w-auto mx-auto mt-4 col-12 col-md-10" onsubmit="return enviarCadastro();">
         <div class="row">
-          <div class="mb-3 col-md-6">
+          <div class="mb-3 col-12 col-md-6">
             <label class="form-label text-white">Nome Completo</label>
             <input type="text" class="form-control" name="nome" placeholder="Digite seu nome completo" required>
           </div>
-          <div class="mb-3 col-md-6">
+          <div class="mb-3 col-12 col-md-6">
             <label class="form-label text-white">Data de Nascimento</label>
             <input type="date" class="form-control" name="dataNascimento" required>
-          </div>          
+          </div>
         </div>
 
         <div class="row">
-          <div class="mb-3 col-md-6">
+          <div class="mb-3 col-12 col-md-6">
             <label class="form-label text-white">E-mail</label>
             <input type="email" class="form-control" name="email" placeholder="Digite seu e-mail" required>
           </div>
-          <div class="mb-3 col-md-6">
+          <div class="mb-3 col-12 col-md-6">
             <label class="form-label text-white">Telefone</label>
             <input type="tel" class="form-control" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
           </div>
@@ -46,18 +45,18 @@
         </div>
 
         <div class="row">
-          <div class="mb-3 col-md-6">
+          <div class="mb-3 col-12 col-md-6">
             <label class="form-label text-white">Senha</label>
             <div class="input-group">
               <input type="password" class="form-control" id="senha" name="senha" placeholder="Crie uma senha" required>
-              <button type="button" class="btn btn-outline-secondary" onclick="toggleSenha('senha')">👁️</button>
+              <button class="btn btn-outline-secondary" type="button" onclick="toggleSenha('senha')">👁️</button>
             </div>
           </div>
-          <div class="mb-3 col-md-6">
+          <div class="mb-3 col-12 col-md-6">
             <label class="form-label text-white">Repita a Senha</label>
             <div class="input-group">
               <input type="password" class="form-control" id="confirmaSenha" placeholder="Repita a senha" required>
-              <button type="button" class="btn btn-outline-secondary" onclick="toggleSenha('senha')">👁️</button>
+              <button class="btn btn-outline-secondary" type="button" onclick="toggleSenha('confirmaSenha')">👁️</button>
             </div>
           </div>
         </div>
@@ -68,7 +67,6 @@
         </div>
       </form>
     </div>
-
   </div>
 
 </body>
