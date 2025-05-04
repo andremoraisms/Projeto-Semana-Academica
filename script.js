@@ -16,3 +16,25 @@ links.forEach(link => {
   }
 });
 
+function enviarCadastro() {
+  const senha = document.getElementById("senha").value;
+  const confirma = document.getElementById("confirmaSenha").value;
+
+  if (senha !== confirma) {
+    alert("As senhas não coincidem!");
+    return false;
+  }
+
+  alert("Cadastro realizado com sucesso!");
+
+  setTimeout(() => {
+    window.location.assign("home.html");
+  }, 100);
+
+  return false;
+}
+
+function toggleSenha(idCampo) {
+  const campo = document.getElementById(idCampo);
+  campo.type = campo.type === "password" ? "text" : "password";
+}
