@@ -33,8 +33,3 @@ function enviarCadastro() {
 
   return false; 
 }
-
-function toggleSenha(idCampo) {
-  const campo = document.getElementById(idCampo);
-  campo.type = campo.type === "password" ? "text" : "password";
-}

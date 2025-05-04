@@ -12,23 +12,20 @@
 <body class="fundo2 centro">
   <div class="container d-flex flex-column align-items-center">
 
-    <div class="mb-4">
-      <img src="imagens/logo-redondo.png" alt="Logo" width="150" height="150" style="margin-top: -150px;">
-    </div>
-
-    <div class="border border-secondary-subtle bordaLogin2 row w-100">
-      <form class="w-auto mx-auto mt-5 col-7" style="align-items: center;" action="home.html" method="get">
+    <div class="border border-secondary-subtle bordaLogin2 row w-100 p-4">
+      <form class="mx-auto w-100" style="max-width: 500px;" action="home.html" method="get">
         <div class="mb-3">
-          <label for="inputEmail" class="form-label" style="color: white;">Usuário ou E-mail</label>
-          <input type="email" class="form-control w-100 w-md-400" id="inputEmail" placeholder="Digite seu e-mail" required>
+          <label for="inputEmail" class="form-label text-white" style="margin-top: 20px;">Usuário ou E-mail</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu e-mail" required>
         </div>
+    
         <div class="mb-3">
-          <label for="inputSenha" class="form-label" style="color: white;">Senha</label>
-          <input type="password" class="form-control w-100 w-md-400" id="inputSenha" placeholder="Digite sua senha" required>
+          <label for="inputSenha" class="form-label text-white">Senha</label>
+          <input type="password" class="form-control" id="inputSenha" placeholder="Digite sua senha" required>
         </div>
-
-        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-3 w-100 w-md-400">
-          <button type="submit" id="button_login" class="btn btn-primary w-100">Entrar</button>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-3">
+          <button type="submit" class="btn btn-primary w-100">Entrar</button>
           <a href="home.html" class="btn btn-primary w-100">Entrar como Visitante</a>
           <a href="cadastro.html" class="btn btn-primary w-100">Fazer Cadastro</a>
         </div>
