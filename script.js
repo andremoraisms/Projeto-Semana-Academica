@@ -16,6 +16,7 @@ links.forEach(link => {
   }
 });
 
+
 function enviarCadastro() {
   const senha = document.getElementById("senha").value;
   const confirma = document.getElementById("confirmaSenha").value;
@@ -26,10 +27,6 @@ function enviarCadastro() {
   }
 
   alert("Cadastro realizado com sucesso!");
-
-  setTimeout(() => {
-    window.location.assign("home.html");
-  }, 100); 
-
-  return false; 
+  window.location.href = "home.html";
+  return false;
 }
