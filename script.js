@@ -74,7 +74,7 @@ document.getElementById('formObra').addEventListener('submit', function (e) {
         <h5 class="card-title">${titulo}</h5>
         <p class="card-text">Local: ${local}</p>
         <p class="card-text">Data: ${dataExibicao}</p> <!-- Exibindo a data formatada -->
-        <p class="card-text">Descrição: ${document.getElementById('descricao').value}</p>/
+        <p class="card-text">Descrição: ${document.getElementById('descricao').value}</p>
       </div>
     `;
 
