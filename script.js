@@ -50,14 +50,12 @@ document.getElementById('formObra').addEventListener('submit', function (e) {
   // Formatando a data para o formato DD/MM/YYYY
   const dataFormatada = new Date(data);
   const dia = String(dataFormatada.getDate()).padStart(2, '0');
-  const mes = String(dataFormatada.getMonth() + 1).padStart(2, '0'); // Meses começam de 0
+  const mes = String(dataFormatada.getMonth() + 1).padStart(2, '0');
   const ano = dataFormatada.getFullYear();
   const dataExibicao = `${dia}/${mes}/${ano}`;
 
-  // Pegando o arquivo de imagem selecionado
+ 
   const imagemFile = imagemInput.files[0];
-
-  // Criando um leitor de arquivos para exibir a imagem
   const reader = new FileReader();
   
   reader.onload = function (e) {
@@ -68,6 +66,7 @@ document.getElementById('formObra').addEventListener('submit', function (e) {
     newCard.classList.add('card', 'col', 'mb-3');
 
     // Definindo a estrutura do card com a imagem de 400px de largura
+    
     newCard.innerHTML = `
       <img src="${e.target.result}" class="card-img-top" alt="Imagem da Obra" style="width: 400px; height: auto; object-fit: cover;"/>
       <div class="card-body">
@@ -78,13 +77,10 @@ document.getElementById('formObra').addEventListener('submit', function (e) {
       </div>
     `;
 
-    // Adicionando o novo card ao container
     cardContainer.appendChild(newCard);
 
-    // Limpando o formulário
     document.getElementById('formObra').reset();
   };
 
-  // Lendo o arquivo de imagem
   reader.readAsDataURL(imagemFile);
 });
